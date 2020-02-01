@@ -10,7 +10,7 @@
     <header>
       <nav>
         <a href="index.html">
-          <img src="img/index_logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
+          <img src="img/logo_page.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
         <ul>
           <li><a href="#">Информация</a></li>
@@ -21,7 +21,7 @@
         </ul>
         <ul>
           <li>
-            <button type="button">Вход</button>
+            <a href="login.html">Вход</a>
           </li>
         </ul>
       </nav>
@@ -38,12 +38,12 @@
       </ul>
 
       <section>
-        <h2>Изображения товара</h2>
-        <img src="img/product_1.jpg" width="460" height="498" alt="Набор для путешествий «Baxter of California»">
+        <h2 class="visually-hidden">Изображения товара</h2>
+        <img src="img/product_1.jpg" width="460" height="498" alt="Набор для путешествий «Baxter of California» вид 1">
         <ul>
-          <li><img src="img/product_2.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></li>
-          <li><img src="img/product_3.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></li>
-          <li><img src="img/product_4.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></li>
+          <li><img src="img/product_2.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California» вид 2"></li>
+          <li><img src="img/product_3.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California» вид 3"></li>
+          <li><img src="img/product_4.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California» вид 4"></li>
         </ul>
       </section>
 
@@ -91,7 +91,29 @@
     <section>
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-      <!-- Форма будет добавлена -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-login">Логин</label>
+          <input id="user-login" type="email" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label for="user-password">Пароль</label>
+          <input id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="remember">Запомните меня
+          </label>
+          <a href="#">Я забыл пароль!</a>
+        </p>
+        <button type="submit">Войти</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img src="img/map.png" width="766" height="560" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       <button type="button">Закрыть</button>
     </section>
 
