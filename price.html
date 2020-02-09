@@ -3,23 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="main-header">
+      <nav class="main-navigation">
         <a href="index.html">
           <img src="img/logo_page.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="price.html">Прайс-лист</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="user-navigation">
           <li>
             <a href="login.html">Вход</a>
           </li>
@@ -31,7 +32,7 @@
       <h1>Прайс-лист</h1>
 
       <ul>
-        <li><a href="index.html">Главня</a></li>
+        <li><a href="index.html">Главная</a></li>
         <li>Прайс-лист</li>
       </ul>
 
@@ -72,31 +73,31 @@
       </section>
     </main>
 
-    <footer>
-      <address>
+    <footer class="main-footer">
+      <address class="footer-contacts">
         Барбершоп «Бородинский»<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-        <button type="button">Как нас найти?</button><br>
+        <button class="button" type="button">Как нас найти?</button><br>
         Телефон: +7 (812) 686-02-66
       </address>
-      <div>
+      <div class="footer-social">
         <p>Давайте дружить</p>
         <ul>
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">фейсбук</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
       </div>
-      <p>
+      <p class="footer-copyright">
         Разработано
-        <a href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>
 
-    <section>
+    <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="user-login">Логин</label>
           <input id="user-login" type="email" name="login" placeholder="Логин">
@@ -106,17 +107,17 @@
           <input id="user-password" type="password" name="password" placeholder="Пароль">
         </p>
         <p>
-          <label>
+          <label class="login-checkbox">
             <input type="checkbox" name="remember">Запомните меня
           </label>
-          <a href="#">Я забыл пароль!</a>
+          <a class="restore" href="#">Я забыл пароль!</a>
         </p>
-        <button type="submit">Войти</button>
+        <button class="button" type="submit">Войти</button>
       </form>
       <button type="button">Закрыть</button>
     </section>
 
-    <section>
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/map.png" width="766" height="560" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       <button type="button">Закрыть</button>
