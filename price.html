@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html">
+        <a class="main-header-logo" href="index.html">
           <img src="img/logo_page.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
         <ul class="site-navigation">
@@ -28,70 +28,75 @@
       </nav>
     </header>
 
-    <main>
-      <h1>Прайс-лист</h1>
+    <main class="container">
+      <h1 class="page-title">Прайс-лист</h1>
 
-      <ul>
+      <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
-        <li>Прайс-лист</li>
+        <li class="breadcrumbs-current">Прайс-лист</li>
       </ul>
 
-      <p>Истинно мужская классика</p>
+      <p class="page-promo">Истинно мужская классика</p>
 
-      <section>
-        <h2>Мы используем только лучшие средства:</h2>
-        <ul>
-          <li>Baxter of California</li>
-          <li>Mr Natty</li>
-          <li>Suavecito</li>
-          <li>Malin+Goetz</li>
-        </ul>
+      <section class="goods-price">
+        <div class="goods">
+          <h2>Мы используем только лучшие средства:</h2>
+          <ul class="goods-list">
+            <li>Baxter of California</li>
+            <li>Mr Natty</li>
+            <li>Suavecito</li>
+            <li>Malin+Goetz</li>
+          </ul>
+        </div>
+        <div class="price">
+          <h2>Цены на услуги<br> наших мастеров:</h2>
+          <table class="price-list">
+            <tr>
+              <td>Стрижка</td>
+              <td>1500 ₽</td>
+            </tr>
+            <tr>
+              <td>Стрижка бороды</td>
+              <td>500 ₽</td>
+            </tr>
+            <tr>
+              <td>Накрутка усов</td>
+              <td>350 ₽</td>
+            </tr>
+          </table>
+        </div>
       </section>
 
-      <section>
-        <h2>Цены на услуги наших мастеров:</h2>
-        <table>
-          <tr>
-            <td>Стрижка</td>
-            <td>1500 ₽</td>
-          </tr>
-          <tr>
-            <td>Стрижка бороды</td>
-            <td>500 ₽</td>
-          </tr>
-          <tr>
-            <td>Накрутка усов</td>
-            <td>350 ₽</td>
-          </tr>
-        </table>
-      </section>
-
-      <section>
+      <section class="about-us">
         <h2>Несколько слов о нас:</h2>
-        <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-        <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+        <div class="about-us-text">
+          <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+          <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+        </div>
       </section>
     </main>
 
     <footer class="main-footer">
-      <address class="footer-contacts">
-        Барбершоп «Бородинский»<br>
-        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-        <button class="button" type="button">Как нас найти?</button><br>
-        Телефон: +7 (812) 686-02-66
-      </address>
-      <div class="footer-social">
-        <p>Давайте дружить</p>
-        <ul>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">фейсбук</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-        </ul>
+      <div class="container">
+        <address class="footer-contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <button class="button" type="button">Как нас найти?</button><br>
+          Телефон: +7 (812) 686-02-66
+        </address>
+        <div class="footer-social">
+          <p>Давайте дружить</p>
+          <ul>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">фейсбук</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          Разработано
+          <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        </p>
       </div>
-      <p class="footer-copyright">
-        Разработано
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-      </p>
     </footer>
 
     <section class="modal modal-login">
