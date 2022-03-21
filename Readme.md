@@ -1,7 +1,7 @@
 # Учебный проект «Барбершоп»
 # Интенсив HTML-CSS уровень 2
 
-* Студент: [Владимир Ч.](https://up.htmlacademy.ru/htmlcss/27/user/58384).
+* Студент: [](https://up.htmlacademy.ru/htmlcss/27/user/58384).
 
 ---
 
